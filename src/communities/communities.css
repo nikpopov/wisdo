@@ -1,0 +1,52 @@
+.communityContainer {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.communityListContainer {
+  position: relative;
+  display: block;
+}
+.slideLeft, .slideRight {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;;
+  position: absolute;
+  top: 8rem;
+}
+.slideLeft {
+  left: -5rem;
+}
+.slideRight {
+  right: -5rem;
+}
+.communityListWrapper {
+  overflow: hidden;
+}
+
+.communityList {
+  position: relative;
+  height: 20rem;
+  width: 1000rem;
+  transition: ease 0.3s;
+}
+
+.communityItem {
+  margin: 0.6rem;
+  width: 16rem;
+  display: inline-block;
+}
+
+.itemImage {
+  min-width: 220px;
+  min-height: 160px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}

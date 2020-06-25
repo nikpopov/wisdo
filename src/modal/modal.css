@@ -1,0 +1,97 @@
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(85, 95, 92, 0.6);
+  display: none;
+  z-index: 5;
+}
+.modalContent {
+  width: 45rem;
+  height: 36rem;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+  top: 50%;
+  margin-top: -18rem;
+  border-radius: 1rem;
+  z-index: 10;
+}
+.modalHeader {
+  height: 4rem;
+}
+.modalHeaderTitle {
+  margin: 1rem;
+  line-height: 4.5rem;
+  color: rgb(206, 70, 206)
+}
+.modalButton, .impressionButton, .btnJoinCommunity {
+  font-size: 1rem;
+  padding: 0.9rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.positionRight {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.6rem;
+}
+.pink {
+  background-color: rgb(206, 70, 206);
+  color: rgb(255, 255, 255);
+}
+.modalImageBlock {
+  width: 22rem;
+  height: 12rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5%;
+  background-repeat: no-repeat;
+}
+.modalTitle, .modalDescription, .modalImpression {
+  text-align: center;
+}
+.modalDescription {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5rem;;
+}
+.impressionButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.impressionButton {
+  display: inline-block;
+  width: 40%;
+}
+div.impressionButtons:first-child {
+  color:rgb(206, 70, 206);
+  background-color: #f1cfe0;
+  border: none;
+}
+.joinCommunity {
+  text-align: center;
+  margin: 1rem;;
+}
+.btnJoinCommunity {
+  width: 60%
+}
+.modalClose, .modalPrevious {
+  position: absolute;
+  top: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  font-size: large;
+  cursor: pointer;
+}
+.modalClose {
+  right: -5rem;
+}
+.modalPrevious {
+  left: -5rem;
+}
