@@ -16,6 +16,7 @@ class CommunityContainer extends Component {
     this.onModalItemOpen = this.onModalItemOpen.bind(this);
     this.modalClose = this.modalClose.bind(this);
     this.onJoinCommunity = this.onJoinCommunity.bind(this);
+    this.onMeetCommunity = this.onMeetCommunity.bind(this);
   }
 
   componentDidMount() {
@@ -62,8 +63,16 @@ class CommunityContainer extends Component {
       const data = await fetchResponse.json();
       if (data) {
         this.setState({
-          communityResponse: data
+          communityResponse: data.data
         })
+      }
+      if (data.status === 'success') {
+        setTimeout(() => {
+          this.setState({
+            modalIsOpen: false,
+            item: null,
+          })
+        }, 3000);
       }
     } catch (err) {
       console.log(err);
